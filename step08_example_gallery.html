@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step08_example_gallery.html</title>
+    <style>
+        html{
+            /* width와 height에 padding과 border-width를 포함시키기 */
+            box-sizing: border-box;
+        }
+        .container{
+            width:90%;
+
+            /* 가운데로 정렬하기 위한 css */
+            margin: 0 auto;
+        }
+        .cards{
+            height: 1000px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            row-gap: 20px;
+            align-items: flex-start;
+        }
+        .cards img{
+            max-width: 25%;
+            margin: 10px;
+            border:  3px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery 예제</h1>
+        <div class="cards">
+            <img src="images/image1.png">
+            <img src="images/image2.png">
+            <img src="images/image3.png">
+            <img src="images/image4.png">
+            <img src="images/image5.png">
+            <img src="images/image6.png">
+            <img src="images/image1.png">
+            <img src="images/image2.png">
+            <img src="images/image3.png">
+        </div>
+    </div>
+</body>
+</html>
